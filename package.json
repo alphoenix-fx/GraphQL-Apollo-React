@@ -1,0 +1,26 @@
+{
+  "name": "spacex_launch_stats",
+  "version": "1.0.0",
+  "description": "App that lists spaceX launches",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Alfred Maboa",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "concurrently": "^5.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-graphql": "^0.9.0",
+    "graphql": "^15.0.0",
+    "react-apollo": "^3.1.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
